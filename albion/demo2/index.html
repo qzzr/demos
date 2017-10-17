@@ -82,203 +82,7 @@
   <!-- Header hook for plugins ================================================== -->
   <meta name="p:domain_verify" content="42e88f032f16584f03743cd515fe5c89">
 <meta name="shopify-checkout-api-token" content="c1eb205db9f8f94bc36a866048613035">
-<script type="text/javascript">
-//<![CDATA[
-      var Shopify = Shopify || {};
-      Shopify.shop = "albion-6.myshopify.com";
-      Shopify.theme = {"name":"brooklyn","id":38447363,"theme_store_id":null,"role":"main"};
-      Shopify.theme.handle = "null";
-      Shopify.theme.style = {"id":null,"handle":null};
 
-//]]>
-</script><script type="text/javascript">
-//<![CDATA[
-    (function() {
-      function asyncLoad() {
-        var urls = ["\/\/cross-sell-assets.s3-eu-west-1.amazonaws.com\/cross-sell.js?shop=albion-6.myshopify.com","\/\/shopify.privy.com\/widget.js?shop=albion-6.myshopify.com","\/\/code.tidio.co\/9ng8b2nzzmuckuypmekjhnmadeqd7e7i.js?shop=albion-6.myshopify.com","\/\/static.criteo.net\/js\/ld\/ld.js?shop=albion-6.myshopify.com","\/\/s3.amazonaws.com\/shopify-apps\/in-stock-reminder\/js\/common.js?shop=albion-6.myshopify.com","https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/8e475d9359513f6ea2ebcf90a\/1a6cc7ce90c665bd0de7ebd13.js?shop=albion-6.myshopify.com","\/\/shopify.sumome.com\/apps\/shopify\/sumome-plugin\/js\/sumome.js?siteID=74afcf0062af900008100f000f23270054b3b600b1147300eb9e8900f0702300\u0026shop=albion-6.myshopify.com"];
-        for (var i = 0; i < urls.length; i++) {
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = urls[i];
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-      };
-      if(window.attachEvent) {
-        window.attachEvent('onload', asyncLoad);
-      } else {
-        window.addEventListener('load', asyncLoad, false);
-      }
-    })();
-
-//]]>
-</script><script id="__st">
-//<![CDATA[
-var __st={"a":9021640,"offset":-21600,"reqid":"465c3c20-5331-41be-8f2c-4f1ad14b28f9","pageurl":"albionfit.com\/","u":"fe666e3c8ed2","p":"home"};
-//]]>
-</script><script src="https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6" type="text/javascript" async="async"></script>
-<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/9021640/digital_wallets/dialog" />
-<script src="https://cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-68ca1924c495cfc55dac65f4853e0c9a395387ffedc8fe58e0f2e677f95d7f23.js" defer="defer"></script>
-      <script type="text/javascript">
-        
-      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-      window.ShopifyAnalytics.meta.currency = 'USD';
-      var meta = {"page":{"pageType":"home"}};
-      for (var attr in meta) {
-        window.ShopifyAnalytics.meta[attr] = meta[attr];
-      }
-    
-      </script>
-
-      <script type="text/javascript">
-        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-          
-        };
-      </script>
-
-      <script type="text/javascript" class="analytics">
-        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
-        
-
-        (function () {
-          var customDocumentWrite = function(content) {
-            var jquery = null;
-
-            if (window.jQuery) {
-              jquery = window.jQuery;
-            } else if (window.Checkout && window.Checkout.$) {
-              jquery = window.Checkout.$;
-            }
-
-            if (jquery) {
-              jquery('body').append(content);
-            }
-          };
-
-          var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-          if (trekkie.integrations) {
-            return;
-          }
-          trekkie.methods = [
-            'identify',
-            'page',
-            'ready',
-            'track',
-            'trackForm',
-            'trackLink'
-          ];
-          trekkie.factory = function(method) {
-            return function() {
-              var args = Array.prototype.slice.call(arguments);
-              args.unshift(method);
-              trekkie.push(args);
-              return trekkie;
-            };
-          };
-          for (var i = 0; i < trekkie.methods.length; i++) {
-            var key = trekkie.methods[i];
-            trekkie[key] = trekkie.factory(key);
-          }
-          trekkie.load = function(config) {
-            trekkie.config = config;
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.onerror = function(e) {
-              (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
-            };
-            script.async = true;
-            script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
-            var first = document.getElementsByTagName('script')[0];
-            first.parentNode.insertBefore(script, first);
-          };
-          trekkie.load(
-            {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":9021640,"isMerchantRequest":null,"themeId":38447363,"themeCityHash":14924986512192808889}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.1},"Google Analytics":{"trackingId":"UA-47235908-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Facebook Pixel":{"pixelIds":["1030952630353806"],"agent":"plshopify1.2"},"Session Attribution":{}}
-          );
-
-          var loaded = false;
-          trekkie.ready(function() {
-            if (loaded) return;
-            loaded = true;
-
-            window.ShopifyAnalytics.lib = window.trekkie;
-            
-      ga('require', 'linker');
-      function addListener(element, type, callback) {
-        if (element.addEventListener) {
-          element.addEventListener(type, callback);
-        }
-        else if (element.attachEvent) {
-          element.attachEvent('on' + type, callback);
-        }
-      }
-      function decorate(event) {
-        event = event || window.event;
-        var target = event.target || event.srcElement;
-        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
-          ga(function (tracker) {
-            var linkerParam = tracker.get('linkerParam');
-            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
-          });
-        }
-      }
-      addListener(window, 'load', function(){
-        for (var i=0; i < document.forms.length; i++) {
-          var action = document.forms[i].getAttribute('action');
-          if(action && action.indexOf('/cart') >= 0) {
-            addListener(document.forms[i], 'submit', decorate);
-          }
-        }
-        for (var i=0; i < document.links.length; i++) {
-          var href = document.links[i].getAttribute('href');
-          if(href && href.indexOf('/checkout') >= 0) {
-            addListener(document.links[i], 'click', decorate);
-          }
-        }
-      });
-    
-
-            var originalDocumentWrite = document.write;
-            document.write = customDocumentWrite;
-            try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-            document.write = originalDocumentWrite;
-
-            
-        window.ShopifyAnalytics.lib.page(
-          null,
-          {"pageType":"home"}
-        );
-      
-            
-          });
-
-          
-      var eventsListenerScript = document.createElement('script');
-      eventsListenerScript.async = true;
-      eventsListenerScript.src = "https://cdn.shopify.com/s/assets/shop_events_listener-d79ebda2632cb15c30906d249ae7888d93876e15291a55bac5c64aaf1903b36a.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-    
-        })();
-      </script>
-    
-<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":9021640,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/9021640","merchantName":"Albion","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Albion","amount":"1.00"}}</script>
-<meta id="in-context-paypal-metadata" data-merchant-id="788Q4RSXUFQ3E" data-environment="production" data-locale="en_US" data-redirect-url="" />
-<script src="https://cdn.shopify.com/s/assets/storefront/express_buttons-55e25ef7eb5ba1d54e8abbe71720cd92bd98a682c8dcae6cbf8691ae60479643.js" defer="defer" crossorigin="anonymous" integrity="sha256-VeJe9+tbodVOirvnFyDNkr2YpoLI3K5sv4aRrmBHlkM="></script><script>
-//<![CDATA[
-      window.Shopify = window.Shopify || {};
-      window.Shopify.Checkout = window.Shopify.Checkout || {};
-      window.Shopify.Checkout.apiHost = "albion-6.myshopify.com";
-      window.Shopify.Checkout.rememberMeHost = "pay.shopify.com";
-      window.Shopify.Checkout.rememberMeAccessToken = "U1N4TXJ2R2UzVmo0OVY5Tkw3UnpmcFRrcEVNcER1ZlI5V2cwd1ZrNkNkcz0tLVVCczRDWkl6NGM4YnRYa3ZYelVVV3c9PQ==--d3777e04bc98d570682402886a50f46c989bdf01";
-
-//]]>
-</script>
-<script>
-//<![CDATA[
-window.ShopifyPaypalV4VisibilityTracking = true;
-//]]>
-</script>
 
 <style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, &#39;Helvetica Neue&#39;, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
 </style>
@@ -296,24 +100,10 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 
 <!--[if (lte IE 9) ]><script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/match-media.min.js?9355143443273182113" type="text/javascript"></script><![endif]-->
 
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/modernizr.min.js?9355143443273182113" type="text/javascript"></script>
-
   
   
 
-  <!-- Typekit added by Will Findlay to use Learning Curve font as serif font === -->  
-  <script src="https://use.typekit.net/ftg7izp.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   
-  <!-- Pinterest tracking code added === -->
-  <script type="text/javascript">
-!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");pintrk('load','2613742520057');
-pintrk('page', {page_name: 'My Page',
-page_category: 'My Page Category'
-});</script><noscript><img height="1" width="1" style="display:none;" alt=""src="https://ct.pinterest.com/v3/?tid=2613742520057&noscript=1" />
-</noscript>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i" rel="stylesheet">
   <meta name="google-site-verification" content="2sTRFIVpgmi_JC6HKTafY2mdvNdoG-cHg5510GlhebE" />
   <meta name="google-site-verification" content="0qZWfgAqm1HHDrObPPhJT0Um0ZytonamTaWa0PFlrAk" />
@@ -2038,9 +1828,6 @@ page_category: 'My Page Category'
   </div>
 
 
-  <script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/fastclick.min.js?9355143443273182113" type="text/javascript"></script>
-  <script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/timber.js?9355143443273182113" type="text/javascript"></script>
-  <script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/theme.js?9355143443273182113" type="text/javascript"></script>
 
   
   <script>
@@ -2049,8 +1836,6 @@ page_category: 'My Page Category'
   </script>
 
   
-    <script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/slick.min.js?9355143443273182113" type="text/javascript"></script>
-    <script src="https://cdn.shopify.com/s/files/1/0902/1640/t/2/assets/slick-theme.js?9355143443273182113" type="text/javascript"></script>
     <script>
       jQuery(function($) {
         slickTheme.init({
@@ -2074,80 +1859,6 @@ page_category: 'My Page Category'
   
   
   
-<script id="dsq-count-scr" src="//albionfit.disqus.com/count.js" async></script>
 
-<!-- CRITEO START -->
-
-
-
-
-<script type="text/javascript">
-(function(){
-
-function priceFromCents(cents) {
-    if (typeof(cents) != "number")
-        return;
-
-    return (cents / 100);
-}
-
-var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
-window.criteo_q = window.criteo_q || [];
-window.criteo_q.push(
-  { event: "setAccount", account: 38169 },
-  { event: "setEmail", email: "" },
-  { event: "setSiteType", type: deviceType },
-  { event: "viewHome" }
-  
-);
-
-function isRelevantCartUpdate(settings) {
-    function dataContains(term) {
-        return settings.data && settings.data.indexOf && settings.data.indexOf(term) > -1;
-    }
-
-    return (settings.url == "/cart/add.js" || settings.url == "/cart/update.js")
-      && (
-        dataContains('attributes[prod') ||
-        (dataContains('id=') && dataContains('quantity='))
-      );
-}
-
-$(document).ajaxSuccess(function(event, xhr, settings) {
-    if (isRelevantCartUpdate(settings)) {
-        $.getJSON("/cart.js", function(data) {
-            var basketData = [];
-            var item;
-
-            if (!data.items || !data.items.length)
-                return;
-
-            for (var i = 0; i < data.items.length; i++) {
-                item = data.items[i];
-
-                basketData.push({
-                    id: item.product_id,
-                    price: priceFromCents(item.price),
-                    quantity: item.quantity
-                });
-            }
-
-            window.criteo_q.push({
-                event: "viewBasket",
-                product: basketData
-            });
-        });
-    }
-});
-})();
-</script>
-
-
-
-<!-- CRITEO END -->
-  
-  <!-- CHAT START -->
-  <script type='text/javascript'>var fc_CSS=document.createElement('link');fc_CSS.setAttribute('rel','stylesheet');var fc_isSecured = (window.location && window.location.protocol == 'https:');var fc_lang = document.getElementsByTagName('html')[0].getAttribute('lang'); var fc_rtlLanguages = ['ar','he']; var fc_rtlSuffix = (fc_rtlLanguages.indexOf(fc_lang) >= 0) ? '-rtl' : '';fc_CSS.setAttribute('type','text/css');fc_CSS.setAttribute('href',((fc_isSecured)? 'https://d36mpcpuzc4ztk.cloudfront.net':'https://assets1.chat.freshdesk.com')+'/css/visitor'+fc_rtlSuffix+'.css');document.getElementsByTagName('head')[0].appendChild(fc_CSS);var fc_JS=document.createElement('script'); fc_JS.type='text/javascript'; fc_JS.defer=true;fc_JS.src=((fc_isSecured)?'https://d36mpcpuzc4ztk.cloudfront.net':'https://assets.chat.freshdesk.com')+'/js/visitor.js';(document.body?document.body:document.getElementsByTagName('head')[0]).appendChild(fc_JS);window.livechat_setting= 'eyJ3aWRnZXRfc2l0ZV91cmwiOiJhbGJpb25maXQuZnJlc2hkZXNrLmNvbSIsInByb2R1Y3RfaWQiOm51bGwsIm5hbWUiOiJBbGJpb24gRml0Iiwid2lkZ2V0X2V4dGVybmFsX2lkIjpudWxsLCJ3aWRnZXRfaWQiOiIwOGY0Zjg5MS02YTk0LTRiM2UtOTQ5Yy00NTE3OTJjMjg4ODgiLCJzaG93X29uX3BvcnRhbCI6ZmFsc2UsInBvcnRhbF9sb2dpbl9yZXF1aXJlZCI6ZmFsc2UsImxhbmd1YWdlIjoiZW4iLCJ0aW1lem9uZSI6Ik1vdW50YWluIFRpbWUgKFVTICYgQ2FuYWRhKSIsImlkIjoyOTAwMDAwNzE3MiwibWFpbl93aWRnZXQiOjEsImZjX2lkIjoiNDBmOTczNTQ3ZDhlZWE5ZmM0NjU4NjU2NTRjNTc0MTIiLCJzaG93IjoxLCJyZXF1aXJlZCI6MiwiaGVscGRlc2tuYW1lIjoiQWxiaW9uIEZpdCIsIm5hbWVfbGFiZWwiOiJOYW1lIiwibWVzc2FnZV9sYWJlbCI6Ik1lc3NhZ2UiLCJwaG9uZV9sYWJlbCI6IlBob25lIiwidGV4dGZpZWxkX2xhYmVsIjoiVGV4dGZpZWxkIiwiZHJvcGRvd25fbGFiZWwiOiJEcm9wZG93biIsIndlYnVybCI6ImFsYmlvbmZpdC5mcmVzaGRlc2suY29tIiwibm9kZXVybCI6ImNoYXQuZnJlc2hkZXNrLmNvbSIsImRlYnVnIjoxLCJtZSI6Ik1lIiwiZXhwaXJ5IjowLCJlbnZpcm9ubWVudCI6InByb2R1Y3Rpb24iLCJlbmRfY2hhdF90aGFua19tc2ciOiJUaGFuayB5b3UhISEiLCJlbmRfY2hhdF9lbmRfdGl0bGUiOiJFbmQiLCJlbmRfY2hhdF9jYW5jZWxfdGl0bGUiOiJDYW5jZWwiLCJzaXRlX2lkIjoiNDBmOTczNTQ3ZDhlZWE5ZmM0NjU4NjU2NTRjNTc0MTIiLCJhY3RpdmUiOjEsInJvdXRpbmciOnsiY2hvaWNlcyI6eyJIYXZlIGEgcHJlLW9yZGVyIG9yIGZpdCBxdWVzdGlvbiI6WyIyOTAwMDAyMjMyMiJdLCJOZWVkIGhlbHAgb24gYW4gZXhpc3Rpbmcgb3JkZXIiOlsiMjkwMDAwMjIzMjAiXSwiU29tZXRoaW5nIGVsc2UiOlsiMCJdLCJkZWZhdWx0IjpbIjAiXX0sImRyb3Bkb3duX2Jhc2VkIjoidHJ1ZSJ9LCJwcmVjaGF0X2Zvcm0iOjEsImJ1c2luZXNzX2NhbGVuZGFyIjpudWxsLCJwcm9hY3RpdmVfY2hhdCI6MCwicHJvYWN0aXZlX3RpbWUiOjEwNSwic2l0ZV91cmwiOiJhbGJpb25maXQuZnJlc2hkZXNrLmNvbSIsImV4dGVybmFsX2lkIjpudWxsLCJkZWxldGVkIjowLCJtb2JpbGUiOjEsImFjY291bnRfaWQiOm51bGwsImNyZWF0ZWRfYXQiOiIyMDE3LTA1LTAxVDE1OjQ0OjE4LjAwMFoiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wNi0xNlQxOTo0Mjo0NC4wMDBaIiwiY2JEZWZhdWx0TWVzc2FnZXMiOnsiY29icm93c2luZ19zdGFydF9tc2ciOiJZb3VyIHNjcmVlbnNoYXJlIHNlc3Npb24gaGFzIHN0YXJ0ZWQiLCJjb2Jyb3dzaW5nX3N0b3BfbXNnIjoiWW91ciBzY3JlZW5zaGFyaW5nIHNlc3Npb24gaGFzIGVuZGVkIiwiY29icm93c2luZ19kZW55X21zZyI6IllvdXIgcmVxdWVzdCB3YXMgZGVjbGluZWQiLCJjb2Jyb3dzaW5nX2FnZW50X2J1c3kiOiJBZ2VudCBpcyBpbiBzY3JlZW4gc2hhcmUgc2Vzc2lvbiB3aXRoIGN1c3RvbWVyIiwiY29icm93c2luZ192aWV3aW5nX3NjcmVlbiI6IllvdSBhcmUgdmlld2luZyB0aGUgdmlzaXRvcuKAmXMgc2NyZWVuIiwiY29icm93c2luZ19jb250cm9sbGluZ19zY3JlZW4iOiJZb3UgaGF2ZSBhY2Nlc3MgdG8gdmlzaXRvcuKAmXMgc2NyZWVuLiIsImNvYnJvd3NpbmdfcmVxdWVzdF9jb250cm9sIjoiUmVxdWVzdCB2aXNpdG9yIGZvciBzY3JlZW4gYWNjZXNzICIsImNvYnJvd3NpbmdfZ2l2ZV92aXNpdG9yX2NvbnRyb2wiOiJHaXZlIGFjY2VzcyBiYWNrIHRvIHZpc2l0b3IgIiwiY29icm93c2luZ19zdG9wX3JlcXVlc3QiOiJFbmQgeW91ciBzY3JlZW5zaGFyaW5nIHNlc3Npb24gIiwiY29icm93c2luZ19yZXF1ZXN0X2NvbnRyb2xfcmVqZWN0ZWQiOiJZb3VyIHJlcXVlc3Qgd2FzIGRlY2xpbmVkICIsImNvYnJvd3NpbmdfY2FuY2VsX3Zpc2l0b3JfbXNnIjoiU2NyZWVuc2hhcmluZyBpcyBjdXJyZW50bHkgdW5hdmFpbGFibGUgIiwiY29icm93c2luZ19hZ2VudF9yZXF1ZXN0X2NvbnRyb2wiOiJBZ2VudCBpcyByZXF1ZXN0aW5nIGFjY2VzcyB0byB5b3VyIHNjcmVlbiAiLCJjYl92aWV3aW5nX3NjcmVlbl92aSI6IkFnZW50IGNhbiB2aWV3IHlvdXIgc2NyZWVuICIsImNiX2NvbnRyb2xsaW5nX3NjcmVlbl92aSI6IkFnZW50IGhhcyBhY2Nlc3MgdG8geW91ciBzY3JlZW4gIiwiY2Jfdmlld19tb2RlX3N1YnRleHQiOiJZb3VyIGFjY2VzcyB0byB0aGUgc2NyZWVuIGhhcyBiZWVuIHdpdGhkcmF3biAiLCJjYl9naXZlX2NvbnRyb2xfdmkiOiJBbGxvdyBhZ2VudCB0byBhY2Nlc3MgeW91ciBzY3JlZW4gIiwiY2JfdmlzaXRvcl9zZXNzaW9uX3JlcXVlc3QiOiJBZ2VudCBzZWVrcyBhY2Nlc3MgdG8geW91ciBzY3JlZW4gIn19';</script>
-  <!-- CHAT END -->
 </body>
 </html>
