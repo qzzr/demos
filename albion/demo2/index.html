@@ -632,6 +632,7 @@
     height: 100%;
     z-index: 10000;
     transition: all .4s ease;
+    z-index: 10000000;
   }
   .modal .iframe {
     height: 100%;
@@ -642,7 +643,7 @@
     position: fixed;
     top: -48px;
     right: 0;
-    z-index: 10001;
+    z-index: 10000001;
     transition: all .2s ease;
   }
   .is-modal-active .modal-close {
@@ -663,17 +664,9 @@
 <script type="text/javascript">
   function modalWindow(modal) {
     var toggle = modal.getAttribute('data-modal-toggle'),
-    toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]'),
-    toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]');
-
+    toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]');
     toggleBody.classList.add('is-active');
-
-    if(toggleClose != null) {
-      toggleClose.onclick = function(event) {
-        toggleBody.classList.remove('is-active');
-        document.body.classList.remove('is-modal-active')
-      };
-    };
+    document.body.classList.add('is-modal-active');
   };
 </script>
 
@@ -717,7 +710,6 @@
     
   </div>
 
-<a class='modal-close' data-modal-close='modal'>Close</a>
 <div class='modal' data-modal-window='modal'>
   <iframe class='iframe' src='https://edge.qzzr.co/index.html#tS__lDkEOdzt_twzh3FwrLes764'></iframe>
 </div>
