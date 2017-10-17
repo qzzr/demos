@@ -825,7 +825,67 @@ page_category: 'My Page Category'
   .hero--full-height .hero__image {
     opacity: .7;
   }
+
+  .is-modal-active {
+    overflow: hidden;
+  }
+  .is-active.modal {
+    top: 0;
+  }
+  .modal {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease;
+  }
+  .modal .iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  .modal-close {
+    position: fixed;
+    top: -48px;
+    right: 0;
+    z-index: 10001;
+    transition: all .2s ease;
+  }
+  .is-modal-active .modal-close {
+    top: 0;
+    right: 24px;
+    line-height: 66px;
+    text-decoration: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .modal-close:hover {
+    opacity: .5;
+  }
 </style>
+
+<script type="text/javascript">
+  function modalWindow(modal) {
+    var toggle = modal.getAttribute('data-modal-toggle'),
+    toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]'),
+    toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]');
+
+    toggleBody.classList.add('is-active');
+
+    if(toggleClose != null) {
+      toggleClose.onclick = function(event) {
+        toggleBody.classList.remove('is-active');
+        document.body.classList.remove('is-modal-active')
+      };
+    };
+  };
+</script>
 
   <div class="hero hero--full-height hero--first" id="Hero">
     
@@ -856,7 +916,7 @@ page_category: 'My Page Category'
                   </h1>
                 
                 
-                  <a href="https://albionfit.com/collections/new-arrivals?=banner" class="btn hero__cta">
+                  <a href="#" data-modal-toggle='modal' onclick='modalWindow(this);' class="btn hero__cta">
                     Take The Quiz &rarr;
                   </a>
                 
@@ -866,6 +926,12 @@ page_category: 'My Page Category'
         </div>
     
   </div>
+
+<a class='modal-close' data-modal-close='modal'>Close</a>
+<div class='modal' data-modal-window='modal'>
+  <iframe class='iframe' src='http://edge.qzzr.co/index.html#tS__lDkEOdzt_twzh3FwrLes764'></iframe>
+</div>
+
 
 <!-- Reopen .wrapper after full-width hero -->
 
